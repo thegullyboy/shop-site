@@ -8,8 +8,8 @@
 body {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f9f9f9;
+    color: var(--text-color);
+    background-color: var(--bg-color);
 }
 
 .container {
@@ -30,15 +30,17 @@ h1, h2, h3 {
 
 /* Typography & Colors */
 :root {
-    --primary-color: #d32f2f;
+    --primary-color: #ef5350;
     --secondary-color: #fbc02d;
-    --dark-color: #212121;
-    --light-color: #fff;
+    --bg-color: #121212;
+    --surface-color: #1e1e1e;
+    --text-color: #e0e0e0;
+    --heading-color: #ffffff;
 }
 
 /* Header & Navigation */
 header {
-    background-color: var(--light-color);
+    background-color: var(--surface-color);
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     position: sticky;
     top: 0;
@@ -84,7 +86,7 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: var(--light-color);
+    color: var(--text-color);
 }
 
 .hero-content {
@@ -106,7 +108,7 @@ nav ul li a:hover {
     display: inline-block;
     padding: 10px 20px;
     background-color: var(--primary-color);
-    color: var(--light-color);
+    color: var(--text-color);
     border-radius: 5px;
     font-weight: bold;
     transition: background 0.3s ease;
@@ -124,7 +126,7 @@ nav ul li a:hover {
 
 .btn-outline:hover {
     background-color: var(--primary-color);
-    color: var(--light-color);
+    color: var(--text-color);
 }
 
 /* Sections General */
@@ -136,7 +138,7 @@ section h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 40px;
-    color: var(--dark-color);
+    color: var(--heading-color);
 }
 
 /* About Us Section */
@@ -149,7 +151,7 @@ section h2 {
 
 /* Products Section */
 .products {
-    background-color: #f1f1f1;
+    background-color: #000000;
 }
 
 .product-grid {
@@ -159,7 +161,7 @@ section h2 {
 }
 
 .product-card {
-    background: var(--light-color);
+    background: var(--surface-color);
     padding: 30px;
     border-radius: 8px;
     text-align: center;
@@ -209,8 +211,8 @@ section h2 {
 
 /* Footer */
 footer {
-    background-color: var(--dark-color);
-    color: var(--light-color);
+    background-color: #000000;
+    color: var(--text-color);
     text-align: center;
     padding: 20px 0;
 }
